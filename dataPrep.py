@@ -68,8 +68,8 @@ def saveProcessedDataToFiles(trainFeatures, trainLabels, testFeatures, testLabel
     numpy.save(directory + "/testLabels.npy", testLabels, allow_pickle=False)
 
 # get numpy arrays containing features and labels
-#rawFeatures, rawLabels = getRawDataFromInternet()
-rawFeatures, rawLabels = getRawDataFromFiles()
+rawFeatures, rawLabels = getRawDataFromInternet()
+#rawFeatures, rawLabels = getRawDataFromFiles()
 
 # print some interesting stats about the data
 print("%d raw features total" % len(rawFeatures))
